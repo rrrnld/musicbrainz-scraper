@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-  - cron:  '17 * * * *'
+  - cron:  '17 3 * * *'
 
 env:
   MB_USERNAME: "heyarne"
