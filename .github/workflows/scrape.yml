@@ -6,6 +6,8 @@ on:
   schedule:
   - cron:  '17 * * * *'
 
+env:
+  MB_USERNAME: "heyarne"
 
 jobs:
   shot-scraper:
@@ -37,12 +39,8 @@ jobs:
     - name: Scrape
       run: |        
         shot-scraper javascript \
-          "https://news.ycombinator.com/from?site=simonwillison.net" \
-          -i scrape.js -o simonwillison-net.json
-        sleep 5
-        shot-scraper javascript \
-          "https://news.ycombinator.com/from?site=datasette.io" \
-          -i scrape.js -o datasette-io.json
+          "https://musicbrainz.com/user/$MB_USERNAME" \
+          -i scrape.js -o musicbrainz.json
     - name: Commit and push
       run: |-
         git config user.name "Automated"

@@ -1,18 +1,21 @@
-Array.from(document.querySelectorAll('.itemlist .athing'), el => {
-  const title = el.querySelector('a.titlelink').innerText;
-  const points = parseInt(el.nextSibling.querySelector('.score').innerText);
-  const url = el.querySelector('a.titlelink').href;
-  const dt = el.nextSibling.querySelector('.age').title;
-  const submitter = el.nextSibling.querySelector('.hnuser').innerText;
-  const commentsUrl = el.nextSibling.querySelector('.age a').href;
-  const id = commentsUrl.split('?id=')[1];
-  // Only posts with comments have a comments link
-  const commentsLink = Array.from(
-    el.nextSibling.querySelectorAll('a')
-  ).filter(el => el && el.innerText.includes('comment'))[0];
-  let numComments = 0;
-  if (commentsLink) {
-    numComments = parseInt(commentsLink.innerText.split()[0]);
-  }
-  return {id, title, url, dt, points, submitter, commentsUrl, numComments};
-})
+const clean = text => text.replace(/ \(.*?\)$/, '')
+const camelize = str => // thx https://stackoverflow.com/a/2970667
+  str.replace(/-/g, ' ').replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, (match, index) => {
+    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+    return index === 0 ? match.toLowerCase() : match.toUpperCase();
+  })
+
+Object.fromEntries(
+  Array.from(document.querySelectorAll('table.statistics'))
+    .map(stats => {
+      return [
+        camelize(clean(stats.querySelector('thead th').innerText)),
+        Object.fromEntries(
+          Array.from(stats.querySelectorAll('tbody tr')).map(row => [
+            camelize(clean(row.querySelector('th').innerText)),
+            parseInt(clean(row.querySelector('td:last-child').innerText).replace(/[^\d+\.]/g, ''), 10)
+          ])
+        )
+      ]
+    })
+)
