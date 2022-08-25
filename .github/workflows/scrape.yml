@@ -1,4 +1,4 @@
-name: Scrape Hacker News
+name: Scrape MusicBrainz
 
 on:
   push:
@@ -39,7 +39,7 @@ jobs:
     - name: Scrape
       run: |        
         shot-scraper javascript \
-          "https://musicbrainz.com/user/$MB_USERNAME" \
+          "https://musicbrainz.org/user/$MB_USERNAME" \
           -i scrape.js -o musicbrainz.json
     - name: Commit and push
       run: |-
