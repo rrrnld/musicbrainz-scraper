@@ -1,13 +1,13 @@
 {
     "edits": {
         "total": 2371,
-        "accepted": 416,
+        "accepted": 425,
         "autoEdits": 1924,
-        "totalApplied": 2340,
+        "totalApplied": 2349,
         "votedDown": 2,
         "failed": 1,
         "cancelled": 14,
-        "open": 14,
+        "open": 5,
         "last24Hours": 0
     },
     "votes": {
@@ -17,7 +17,7 @@
     },
     "addedEntities": {
         "artist": 67,
-        "coverArt": 360,
+        "coverArt": 369,
         "label": 8,
         "recording": 1,
         "release": 254,
