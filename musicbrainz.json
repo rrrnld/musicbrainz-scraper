@@ -16,12 +16,12 @@
         "abstain": 0
     },
     "addedEntities": {
-        "artist": 96,
+        "artist": 98,
         "coverArt": 402,
         "label": 11,
         "recording": 1,
-        "release": 281,
-        "releaseGroup": 269,
+        "release": 285,
+        "releaseGroup": 273,
         "series": 3
     },
     "tagsAndRatings": {
