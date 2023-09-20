@@ -1,14 +1,14 @@
 {
     "edits": {
-        "total": 3049,
+        "total": 3058,
         "accepted": 587,
-        "autoEdits": 2443,
-        "totalApplied": 3030,
+        "autoEdits": 2451,
+        "totalApplied": 3038,
         "votedDown": 2,
         "failed": 2,
         "cancelled": 15,
-        "open": 0,
-        "last24Hours": 0
+        "open": 1,
+        "last24Hours": 9
     },
     "votes": {
         "yes": 37,
@@ -25,7 +25,7 @@
         "series": 3
     },
     "tagsAndRatings": {
-        "tagsUpvoted": 109,
+        "tagsUpvoted": 110,
         "tagsDownvoted": 0,
         "ratings": 10
     }
