@@ -1,1 +1,32 @@
-{}
+{
+    "edits": {
+        "total": 3276,
+        "accepted": 614,
+        "autoEdits": 2642,
+        "totalApplied": 3256,
+        "votedDown": 2,
+        "failed": 2,
+        "cancelled": 15,
+        "open": 1,
+        "last24Hours": 0
+    },
+    "votes": {
+        "yes": 37,
+        "no": 0,
+        "abstain": 0
+    },
+    "addedEntities": {
+        "artist": 131,
+        "coverArt": 515,
+        "label": 14,
+        "recording": 1,
+        "release": 341,
+        "releaseGroup": 326,
+        "series": 4
+    },
+    "tagsAndRatings": {
+        "tagsUpvoted": 114,
+        "tagsDownvoted": 0,
+        "ratings": 10
+    }
+}
