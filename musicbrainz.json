@@ -1,14 +1,14 @@
 {
     "edits": {
-        "total": 3825,
+        "total": 3834,
         "accepted": 678,
-        "autoEdits": 3127,
-        "totalApplied": 3805,
+        "autoEdits": 3135,
+        "totalApplied": 3813,
         "votedDown": 2,
         "failed": 2,
         "cancelled": 15,
-        "open": 1,
-        "last24Hours": 0
+        "open": 2,
+        "last24Hours": 9
     },
     "votes": {
         "yes": 39,
@@ -16,13 +16,13 @@
         "abstain": 0
     },
     "addedEntities": {
-        "artist": 166,
+        "artist": 167,
         "coverArt": 574,
         "event": 1,
         "label": 15,
         "recording": 1,
-        "release": 400,
-        "releaseGroup": 384,
+        "release": 401,
+        "releaseGroup": 385,
         "series": 4
     },
     "tagsAndRatings": {
