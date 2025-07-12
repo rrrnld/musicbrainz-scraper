@@ -1,14 +1,14 @@
 {
     "edits": {
-        "total": 4022,
+        "total": 4023,
         "accepted": 715,
         "autoEdits": 3288,
         "totalApplied": 4003,
         "votedDown": 2,
         "failed": 2,
         "cancelled": 15,
-        "open": 0,
-        "last24Hours": 6
+        "open": 1,
+        "last24Hours": 7
     },
     "votes": {
         "yes": 40,
