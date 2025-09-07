@@ -1,14 +1,14 @@
 {
     "edits": {
-        "total": 4078,
+        "total": 4084,
         "accepted": 725,
-        "autoEdits": 3334,
-        "totalApplied": 4059,
+        "autoEdits": 3339,
+        "totalApplied": 4064,
         "votedDown": 2,
         "failed": 2,
         "cancelled": 15,
-        "open": 0,
-        "last24Hours": 0
+        "open": 1,
+        "last24Hours": 6
     },
     "votes": {
         "yes": 40,
@@ -21,8 +21,8 @@
         "event": 1,
         "label": 18,
         "recording": 1,
-        "release": 428,
-        "releaseGroup": 412,
+        "release": 429,
+        "releaseGroup": 413,
         "series": 4
     },
     "tagsAndRatings": {
